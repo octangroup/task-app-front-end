@@ -17,7 +17,6 @@ export default class Form extends Component {
     saveData =async()=>{
         const {email,password} = this.state;
 
-        //save data with asyncstorage
         let loginDetails={
             username: username,
             email: email,
