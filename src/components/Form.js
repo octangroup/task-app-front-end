@@ -15,7 +15,7 @@ export default class Form extends Component {
     }
 
     saveData =async()=>{
-        const {email,password} = this.state;
+        const {username, email, password} = this.state;
 
         let loginDetails={
             username: username,
@@ -39,7 +39,7 @@ export default class Form extends Component {
 
                 if (ld.username != null && ld.email != null && ld.password != null)
                 {
-                    if (ld.email == email && ld.password == password)
+                    if (ld.username == username && ld.email == email && ld.password == password)
                     {
                         alert('Go in!');
                     }
@@ -66,7 +66,7 @@ export default class Form extends Component {
         return(
             <View style={styles.container}>
                 <TextInput style={styles.inputBox}
-                onChangeText={(email) => this.setState({username})}
+                onChangeText={(username) => this.setState({username})}
                 underlineColorAndroid='rgba(0,0,0,0)' 
                 placeholder="Username"
                 placeholderTextColor = "#002f6c"
