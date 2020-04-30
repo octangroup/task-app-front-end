@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "justifyContent": "center",
+    }
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Username"
+    placeholderTextColor="#002f6c"
+    rejectResponderTermination={true}
+    selectionColor="#fff"
+    style={
+      Object {
+        "backgroundColor": "#eeeeee",
+        "borderRadius": 25,
+        "color": "#002f6c",
+        "fontSize": 16,
+        "marginVertical": 10,
+        "paddingHorizontal": 16,
+        "width": 300,
+      }
+    }
+    underlineColorAndroid="rgba(0,0,0,0)"
+  />
+  <TextInput
+    allowFontScaling={true}
+    keyboardType="email-address"
+    onChangeText={[Function]}
+    onSubmitEditing={[Function]}
+    placeholder="Email"
+    placeholderTextColor="#002f6c"
+    rejectResponderTermination={true}
+    selectionColor="#fff"
+    style={
+      Object {
+        "backgroundColor": "#eeeeee",
+        "borderRadius": 25,
+        "color": "#002f6c",
+        "fontSize": 16,
+        "marginVertical": 10,
+        "paddingHorizontal": 16,
+        "width": 300,
+      }
+    }
+    underlineColorAndroid="rgba(0,0,0,0)"
+  />
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    placeholder="Password"
+    placeholderTextColor="#002f6c"
+    rejectResponderTermination={true}
+    secureTextEntry={true}
+    style={
+      Object {
+        "backgroundColor": "#eeeeee",
+        "borderRadius": 25,
+        "color": "#002f6c",
+        "fontSize": 16,
+        "marginVertical": 10,
+        "paddingHorizontal": 16,
+        "width": 300,
+      }
+    }
+    underlineColorAndroid="rgba(0,0,0,0)"
+  />
+  <View
+    accessible={true}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "#4f83cc",
+        "borderRadius": 25,
+        "marginVertical": 10,
+        "opacity": 1,
+        "paddingVertical": 12,
+        "width": 300,
+      }
+    }
+  >
+    <Text
+      onPress={[Function]}
+      style={
+        Object {
+          "color": "#ffffff",
+          "fontSize": 16,
+          "fontWeight": "500",
+          "textAlign": "center",
+        }
+      }
+    />
+  </View>
+</View>
+`;

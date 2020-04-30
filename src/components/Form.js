@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 import React, {Component} from 'react';
 import {
   StyleSheet,
@@ -8,8 +9,6 @@ import {
   AsyncStorage,
   Keyboard,
 } from 'react-native';
-
-import {Actions} from 'react-native-router-flux';
 
 export default class Form extends Component {
   constructor(props) {
@@ -40,16 +39,16 @@ export default class Form extends Component {
           password,
       );
       this.login();
-    } else if (this.props.type == 'Login') {
+    } else if (this.props.type === 'Login') {
       try {
-        let loginDetails = await AsyncStorage.getItem('loginDetails');
+        loginDetails = await AsyncStorage.getItem('loginDetails');
         let ld = JSON.parse(loginDetails);
 
         if (ld.username != null && ld.email != null && ld.password != null) {
           if (
-            ld.username == username &&
-            ld.email == email &&
-            ld.password == password
+            ld.username === username &&
+            ld.email === email &&
+            ld.password === password
           ) {
             alert('Go in!');
           } else {
