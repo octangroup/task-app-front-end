@@ -8,7 +8,10 @@ import {
   TouchableOpacity,
   AsyncStorage,
   Keyboard,
+  ActionSheetIOS,
 } from 'react-native';
+
+import {Actions} from 'react-native-router-flux';
 
 export default class Form extends Component {
   constructor(props) {
@@ -50,7 +53,7 @@ export default class Form extends Component {
             ld.email === email &&
             ld.password === password
           ) {
-            alert('Go in!');
+            this.home();
           } else {
             alert('Email and Password does not exist!');
           }
@@ -75,6 +78,10 @@ export default class Form extends Component {
         ld.password,
     );
   };
+
+  home() {
+    Actions.home();
+  }
 
   render() {
     return (
