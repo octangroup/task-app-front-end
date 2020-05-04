@@ -11,7 +11,7 @@ export default class Routes extends Component {
         barButtonIconStyle={styles.barButtonIconStyle}
         hideNavBar={false}
         navigationBarStyle={styles.navBar}
-        titleStyle={styles.color}>
+        titleStyle={styles.title}>
         <Stack key="root">
           <Scene key="login" component={Login} title="Login" />
           <Scene key="signup" component={Signup} title="Sign up" />
