@@ -1,13 +1,9 @@
 import React, {Component} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 
 export default class Home extends Component {
   render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.text}>First Page</Text>;
-      </View>
-    );
+    return <View style={styles.container} />;
   }
 }
 
