@@ -16,7 +16,14 @@ export default class Routes extends Component {
         <Stack key="root">
           <Scene key="login" component={Login} title="Login" />
           <Scene key="signup" component={Signup} title="Sign up" />
-          <Scene key="home" component={Home} title="User Tasks" />
+          <Scene
+            key="home"
+            component={Home}
+            title="User Tasks"
+            onRight={() => {}}
+            rightTitle={' Add Task'}
+            rightButtonTextStyle={styles.button}
+          />
         </Stack>
       </Router>
     );
@@ -31,6 +38,9 @@ const styles = {
     backgroundColor: '#1565c0',
   },
   title: {
+    color: 'white',
+  },
+  button: {
     color: 'white',
   },
 };
