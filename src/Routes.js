@@ -4,8 +4,13 @@ import {Router, Stack, Scene} from 'react-native-router-flux';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Home from './pages/Home';
+import Task from './pages/TaskForm';
+import {Actions} from 'react-native-router-flux';
 
 export default class Routes extends Component {
+  tasks() {
+    Actions.tasks();
+  }
   render() {
     return (
       <Router
@@ -20,10 +25,13 @@ export default class Routes extends Component {
             key="home"
             component={Home}
             title="User Tasks"
-            onRight={() => {}}
+            onRight={() => {
+              this.tasks();
+            }}
             rightTitle={' Add Task'}
             rightButtonTextStyle={styles.button}
           />
+          <Scene key="tasks" component={Task} title="Tasks" />
         </Stack>
       </Router>
     );
